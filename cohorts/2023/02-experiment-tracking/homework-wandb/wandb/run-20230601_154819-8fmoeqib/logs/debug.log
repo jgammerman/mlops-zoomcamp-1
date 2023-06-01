@@ -1,0 +1,34 @@
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_setup.py:_flush():76] Configure stats pid to 7072
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/.config/wandb/settings
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/settings
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'jgammerman', 'project': 'mlops-zoomcamp-wandb', 'root_dir': '/home/ubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb', 'run_id': '8fmoeqib', 'sweep_param_path': '/home/ubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/sweep-46a4dgf8/config-8fmoeqib.yaml', 'sweep_id': '46a4dgf8'}
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'cohorts/2023/02-experiment-tracking/homework-wandb/sweep.py', 'program': '/home/ubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/sweep.py'}
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_init.py:_log_setup():507] Logging user logs to /home/ubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230601_154819-8fmoeqib/logs/debug.log
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_init.py:_log_setup():508] Logging internal logs to /home/ubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230601_154819-8fmoeqib/logs/debug-internal.log
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():547] calling init triggers
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():554] wandb.init called with sweep_config: {'max_depth': 3, 'min_samples_leaf': 4, 'min_samples_split': 3, 'n_estimators': 37}
+config: {}
+2023-06-01 15:48:19,738 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():596] starting backend
+2023-06-01 15:48:19,739 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():600] setting up manager
+2023-06-01 15:48:19,743 INFO    Thread-41 (_run_job):7072 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-06-01 15:48:19,746 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():606] backend started and connected
+2023-06-01 15:48:19,750 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_config_callback():1286] config_cb None None {'max_depth': 3, 'min_samples_leaf': 4, 'min_samples_split': 3, 'n_estimators': 37}
+2023-06-01 15:48:19,751 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():700] updated telemetry
+2023-06-01 15:48:19,756 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-06-01 15:48:20,077 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_on_init():2177] communicating current version
+2023-06-01 15:48:20,115 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_on_init():2186] got version response 
+2023-06-01 15:48:20,115 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():787] starting run threads in backend
+2023-06-01 15:48:23,812 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_console_start():2158] atexit reg
+2023-06-01 15:48:23,812 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_redirect():2013] redirect: 3
+2023-06-01 15:48:23,812 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_redirect():2078] Wrapping output streams.
+2023-06-01 15:48:23,813 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_redirect():2103] Redirects installed.
+2023-06-01 15:48:23,813 INFO    Thread-41 (_run_job):7072 [wandb_init.py:init():829] run started, returning control to user process
+2023-06-01 15:48:25,867 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_finish():1893] finishing run jgammerman/mlops-zoomcamp-wandb/8fmoeqib
+2023-06-01 15:48:25,867 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_atexit_cleanup():2127] got exitcode: 0
+2023-06-01 15:48:25,868 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_restore():2110] restore
+2023-06-01 15:48:25,868 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_restore():2116] restore done
+2023-06-01 15:48:31,493 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-06-01 15:48:31,493 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-06-01 15:48:31,495 INFO    Thread-41 (_run_job):7072 [wandb_run.py:_footer_sync_info():3428] logging synced files
