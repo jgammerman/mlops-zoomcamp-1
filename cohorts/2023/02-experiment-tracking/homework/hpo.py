@@ -8,6 +8,8 @@ from optuna.samplers import TPESampler
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
+import argparse
+
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 mlflow.set_experiment("random-forest-hyperopt")
 
@@ -17,18 +19,19 @@ def load_pickle(filename):
         return pickle.load(f_in)
 
 
-@click.command()
-@click.option(
-    "--data_path",
-    default="./output",
-    help="Location where the processed NYC taxi trip data was saved"
-)
-@click.option(
-    "--num_trials",
-    default=10,
-    help="The number of parameter evaluations for the optimizer to explore"
-)
-def run_optimization(data_path: str, num_trials: int):
+# @click.command()
+# @click.option(
+#     "--data_path",
+#     default="./output",
+#     help="Location where the processed NYC taxi trip data was saved"
+# )
+# @click.option(
+#     "--num_trials",
+#     default=10,
+#     help="The number of parameter evaluations for the optimizer to explore"
+# )
+
+def run_optimization(data_path: str = "./output", num_trials: int = 10):
 
     X_train, y_train = load_pickle(os.path.join(data_path, "train.pkl"))
     X_val, y_val = load_pickle(os.path.join(data_path, "val.pkl"))
@@ -47,6 +50,11 @@ def run_optimization(data_path: str, num_trials: int):
         rf.fit(X_train, y_train)
         y_pred = rf.predict(X_val)
         rmse = mean_squared_error(y_val, y_pred, squared=False)
+
+        # Log hyperparameters and validation RMSE to MLflow
+        with mlflow.start_run():
+            mlflow.log_params(params)
+            mlflow.log_metric("validation_rmse", rmse)
 
         return rmse
 

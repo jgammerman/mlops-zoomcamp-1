@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework/mlruns/0/b7d5f57981d3442384a738e7f1b925bf/artifacts
+end_time: 1685014500827
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b7d5f57981d3442384a738e7f1b925bf
+run_name: adaptable-lamb-34
+run_uuid: b7d5f57981d3442384a738e7f1b925bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685014486911
+status: 4
+tags: []
+user_id: ubuntu
